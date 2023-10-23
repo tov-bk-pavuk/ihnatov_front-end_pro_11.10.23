@@ -38,12 +38,68 @@ for (let number of arr) {
 console.log(sum)
 
 // Знайти добуток усіх цілих чисел від 15 до 35.
-
+counter = 15
+product = 1
+while (counter <= 35) {
+    product *= counter;
+    counter++;
+}
+console.log(product)
 
 // Знайти середнє арифметичне всіх цілих чисел від 1 до 500.
+counter = 1
+sum = 0
+while (counter <= 500) {
+    sum += counter;
+    counter++;
+}
+console.log(sum / 500);
 // Вивести суму лише парних чисел в діапазоні від 30 до 80.
+counter = 30;
+sum = 0;
+for (counter; counter <=80; counter += 2) {
+    sum += counter;
+}
+console.log(sum)
+
 // Вивести всі числа в діапазоні від 100 до 200 кратні 3.
+wholeString = "";
+counter = 100;
+for (counter; counter <=200; counter++) {
+    if (counter % 3 === 0) {
+        wholeString += `${counter} `;
+    }
+}
+console.log(wholeString)
+
 // Дано натуральне число. Знайти та вивести на сторінку всі його дільники.
 // Визначити кількість його парних дільників.
 // Знайти суму його парних дільників.
+let divisors = "";
+let evenDivisors = "";
+sum = 0;
+const inputNumber = prompt("Enter a number");
+let intNumber = Number(inputNumber);
+counter = intNumber;
+while (counter >= 0) {
+    if (intNumber % counter === 0) {
+        divisors += `${counter} `;
+    }
+    if (counter % 2 === 0  && intNumber % counter === 0) {
+        evenDivisors += `${counter} `;
+        sum += counter
+    }
+    counter--;
+}
+console.log(divisors)
+console.log(evenDivisors)
+console.log(sum)
+
 // Надрукувати повну таблицю множення від 1 до 10.
+let tableNumber = 1;
+// let multiplier = 1;
+for (tableNumber; tableNumber <= 9; tableNumber++) {
+    for (let multiplier = 1; multiplier <= 9; multiplier++) {
+        console.log(`${tableNumber} * ${multiplier} = ${tableNumber * multiplier}`)
+    }
+}
