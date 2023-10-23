@@ -57,7 +57,7 @@ console.log(sum / 500);
 // Вивести суму лише парних чисел в діапазоні від 30 до 80.
 counter = 30;
 sum = 0;
-for (counter; counter <=80; counter += 2) {
+for (counter; counter <= 80; counter += 2) {
     sum += counter;
 }
 console.log(sum)
@@ -65,7 +65,7 @@ console.log(sum)
 // Вивести всі числа в діапазоні від 100 до 200 кратні 3.
 wholeString = "";
 counter = 100;
-for (counter; counter <=200; counter++) {
+for (counter; counter <= 200; counter++) {
     if (counter % 3 === 0) {
         wholeString += `${counter} `;
     }
@@ -79,7 +79,7 @@ let divisors = "";
 let evenDivisors = "";
 sum = 0;
 const inputNumber = prompt("Enter a number");
-let intNumber = Number(inputNumber);
+let intNumber = !isNaN(Number(inputNumber)) ? Number(inputNumber) : console.log("It is not a number");
 counter = intNumber;
 while (counter >= 0) {
     if (intNumber % counter === 0) {
