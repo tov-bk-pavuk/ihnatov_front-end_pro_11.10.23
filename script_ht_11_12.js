@@ -34,7 +34,7 @@ console.log(`\n\nHome task 12\n`)
 key = generateKey(length, characters)
 
 function generateKey(length, characters) {
-    length = length <= 0 ? alert("Length can must be above 0") : length
+    length = length <= 0 ? alert("Length must be above 0") : length
     characters = characters.length === 0 || characters.trim() === "" ? alert("Characters string is empty") : characters
     let result = ""
     let counter = 0
