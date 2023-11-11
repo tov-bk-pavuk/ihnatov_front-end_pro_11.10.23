@@ -19,7 +19,7 @@ console.log(`callCounter = ${callCounter()}`)
 const createPerson = function () {
     const person = {
         name: "Noname",
-        age: "0",
+        age: 0,
         experience: 0,
         addOneExperiencePoint: function (addArg) {this.experience += addArg},
     }

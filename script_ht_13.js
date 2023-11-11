@@ -3,9 +3,9 @@
 
 const arr = ["", 123, "asd", true, null, [], {}, 11, 13.19, NaN]
 const average = function (array) {
-    const arr_ = array.filter((item) => Number(item) === item);
-    const sum = arr_.reduce((sum, item) => sum += item, 0)
-    return sum / arr_.length
+    const arr = array.filter((item) => Number(item) === item);
+    const sum = arr.reduce((sum, item) => sum += item, 0)
+    return sum / arr.length
 };
 
 console.log(average(arr))
