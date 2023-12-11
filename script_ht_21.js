@@ -5,7 +5,8 @@
 // При натисканні на смайл - під ним змінюється значення лічильника.
 // Реалізувати таким чином, щоб додавання нових варіантів відповіді не вело до додавання нових функцій.
 
-smiles = (number) => (
+// переделать в один объект
+const smiles = (number) => (
         {
         1: "img/smile_1.jpg",
         2: "img/smile_2.jpg",
@@ -15,7 +16,8 @@ smiles = (number) => (
 }[number]
 )
 
-polls = {
+// убрать из глобальной области видимости
+const polls = {
         1: 0,
         2: 0,
         3: 0,
@@ -31,20 +33,20 @@ div.style.marginLeft = "auto"
 
 const length = Object.keys(polls).length;
 for (let number = 1; number <= length; number++) {
-        const inner_div = document.createElement("div")
-        inner_div.style.width = "20%"
-        inner_div.style.padding = "10px"
-        inner_div.id = number.toString()
+        const innerDiv = document.createElement("div")
+        innerDiv.style.width = "20%"
+        innerDiv.style.padding = "10px"
+        innerDiv.id = number.toString()
         const img = document.createElement("img")
         const innerParagraph = document.createElement("p")
         img.src = smiles(number)
-        inner_div.appendChild(img)
-        inner_div.appendChild(innerParagraph)
-        div.appendChild(inner_div)
+        innerDiv.appendChild(img)
+        innerDiv.appendChild(innerParagraph)
+        div.appendChild(innerDiv)
 }
 
 body.appendChild(div)
-
+// перейти на класс и айдишник вместо узлов
 document.querySelector("#mainDiv").addEventListener("click", function (event) {
         polls[event.target.parentNode.id]++
         event.target.parentNode.children[1].textContent = polls[event.target.parentNode.id]
