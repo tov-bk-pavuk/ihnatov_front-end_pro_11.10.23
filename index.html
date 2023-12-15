@@ -3,13 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home task 22</title>
+    <title>Home task 23 Forms</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Home task <span>22</span></h1>
+<h1>Home task <span>23 Forms</span></h1>
 
-    <script src="script_ht_22.js"></script>
+<form id="registrationForm">
+    <label for="firstName">Ім'я:</label><br>
+    <input type="text" id="firstName" name="firstName" placeholder="Введіть шм'я "><br>
+
+    <label for="lastName">Прізвище:</label><br>
+    <input type="text" id="lastName" name="lastName" placeholder="Введіть прізвище"><br>
+
+    <label for="dob">Дата народження:</label><br>
+    <input type="text" id="dob" name="dob" placeholder="ДД.ММ.РРРР"><br>
+
+    <p>Стать:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Чоловіча</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Жіноча</label><br>
+
+    <label for="city">Місто:</label><br>
+    <select id="city" name="city">
+        <option value="Unprovided">Не обрано</option>
+        <option value="kyiv">Київ</option>
+        <option value="lviv">Львів</option>
+        <option value="odesa">Одеса</option>
+    </select><br>
+
+    <label for="address">Адреса:</label><br>
+    <textarea id="address" name="address"></textarea><br>
+
+    <p>Мови, якими володіє:</p>
+    <input type="checkbox" id="language1" class="language" value="Ukrainian">
+    <label for="language1"> Українська</label><br>
+    <input type="checkbox" id="language2" class="language" value="Russian">
+    <label for="language2"> Російська</label><br>
+
+    <input type="submit" value="Зберегти">
+</form>
+<button id="clean">Очистити результати</button>
+
+
+
+    <script src="script_ht_23.js"></script>
+
 </body>
 </html>
