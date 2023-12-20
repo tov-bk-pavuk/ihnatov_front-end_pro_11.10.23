@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.title, .comment, .articleBody {
+    color: darkgrey;
+    text-decoration-color: #f0f0f0;
+    /*font-size: 200px;*/
+}
+
+h5, h3 {
+    display: inline;
+}
+
+label, input, form {
+    margin-top: 15px;
+}
+
+h3, .articleBody {
+    margin-left: 50px;
+}
+
+#inputError {
+    color: red;
+    display: none;
+    position: absolute;
+}
+
+#labelCommentFormLabel {
+    color: darkgray;
+    font-size: small;
+}

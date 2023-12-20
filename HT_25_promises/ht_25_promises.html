@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1></h1>
+<form id="searchForm">
+    <label for="searchIdForm">Enter an ID for search a post in articles at <a href="https://jsonplaceholder.typicode.com/posts">https://jsonplaceholder.typicode.com/posts</a></label><br>
+    <label for="searchIdForm" id="inputError">Number from 1 to 100</label><br>
+    <input type="text" id="searchIdForm" name="searchIdFormText" placeholder="Enter a number 1-100"><br>
+<!--    <input type="submit" value="Search">-->
+</form>
+<h5>Article Title: </h5>
+<h3 class="title" style="display: inline-block">Waiting for an article Title</h3><br>
+<h5>Article text: </h5>
+<p class="articleBody" style="display: inline-block">Waiting for an article</p>
+<h4>COMMENTS</h4>
+
+<form id="commentForm">
+    <label id="labelCommentFormLabel" for="commentFormLabel">Write a comment below</label><br>
+    <input type="text" id="commentFormLabel" name="commentText" placeholder="Enter your comment here"><br>
+    <input type="submit" value="Add">
+</form>
+
+<script type="module" src="script_ht_25.js"></script>
+
+
+</body>
+</html>
