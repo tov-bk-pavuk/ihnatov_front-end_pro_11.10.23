@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+table, tr, td, th {
+    border: solid 1px yellowgreen;
+    text-align: center;
+}
+
+th {
+    width: 100px;
+}
+
+#GPTButton {
+    margin-top: 10px;
+}
