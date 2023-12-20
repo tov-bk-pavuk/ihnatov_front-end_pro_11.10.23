@@ -34,6 +34,7 @@ const searchFormHandler = function (evt) {
 	const inputIdValue = evt.target.value
 	const articleBody = document.querySelector(".articleBody")
 	const articleTitle = document.querySelector(".title")
+
 	if (
 		!isNaN(Number(inputIdValue)) &&
 		Number(inputIdValue) >= 1 &&
@@ -56,7 +57,6 @@ const searchFormHandler = function (evt) {
 const commentFormHandler = function (evt) {
 	evt.preventDefault()
 	if (evt.target.id === "commentForm") {
-		const commentBefore = document.querySelector(".comment")
 		const commentP = document.createElement("p")
 		const comments = document.querySelector("h4")
 		commentP.innerText = document.querySelector("#commentForm input[name='commentText']").value
